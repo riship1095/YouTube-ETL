@@ -1,6 +1,5 @@
 aws s3 cp . s3://de-yt-raw-useast2-dev/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
 
-# To copy all data files to its own location, following Hive-style patterns:
 aws s3 cp CAvideos.csv s3://de-yt-raw-useast2-dev/youtube/raw_statistics/region=ca/
 aws s3 cp DEvideos.csv s3://de-yt-raw-useast2-dev/youtube/raw_statistics/region=de/
 aws s3 cp FRvideos.csv s3://de-yt-raw-useast2-dev/youtube/raw_statistics/region=fr/
