@@ -55,6 +55,7 @@ dropnullfields3 = DropNullFields.apply(frame=resolvechoice2,transformation_ctx="
 datasink1 = dropnullfields3.toDF().coalesce(1)
 
 df_final_output = DynamicFrame.fromDF(datasink1,glueContext,"df_final_output")
+
 # Script generated for node S3 bucket
 S3bucket_node3 = glueContext.write_dynamic_frame.from_options(
     frame=dropnullfields3,
